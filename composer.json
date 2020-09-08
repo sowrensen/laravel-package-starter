@@ -1,0 +1,41 @@
+{
+  "name": "sowrensen/package",
+  "description": "Some description",
+  "keywords": [
+    "laravel"
+  ],
+  "homepage": "https://project.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sowren Sen",
+      "email": "sowrensen@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "laravel/framework": ">=6.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": ">=3.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sowren\\Package\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sowren\\Package\\Test\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sowren\\Package\\PackageServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
