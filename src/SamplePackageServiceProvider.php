@@ -32,7 +32,7 @@ class SamplePackageServiceProvider extends ServiceProvider
      */
     protected function registerFacades()
     {
-        $this->app->singleton('SamplePackage', function ($app) {
+        $this->app->singleton(SamplePackage::class, function ($app) {
             return new \Sowren\Package\SamplePackage();
         });
     }

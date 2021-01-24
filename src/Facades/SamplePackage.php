@@ -8,6 +8,6 @@ class SamplePackage extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'SamplePackage';
+        return \Sowren\Package\SamplePackage::class;
     }
 }
